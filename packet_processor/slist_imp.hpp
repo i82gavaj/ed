@@ -141,9 +141,9 @@ typename SList<T>::Ref SList<T>::create(std::istream& in) noexcept(false)
     in >> token;
 
     //TODO
-    //Hint: use std::istriongstream to convert from "string" to template
+    //Hint: use std::istringstream to convert from "string" to template
     // parameter T type.
-    // Throw std::runtime_error("Wrong input format.") exception if a input
+    // Throw std::runtime_error("Wrong input format.") exception when an input
     // format error was found.
 
 
@@ -222,8 +222,8 @@ bool SList<T>::has(T const& it) const
 {
     bool found = false;
     //TODO
-    //Hint: you can reuse SList::find() but remebering restore cursors to
-    //assure not modify the state of the list.
+    //Hint: you can reuse SList::find() but you must remember to restore 
+    // the old the cursor position. In this way we assure not modify the state of the list.
     //Hint: use const_cast<> to remove constness of this.
 
     //
